@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\tehnikum\c#\InvestingIS\InvestingIS\obj\Debug\
+D:\tehnikum\c#\InvestingIS_GIT\InvestingIS\InvestingIS\obj\Debug\
 InvestingIS
 none
 false
 DEBUG;TRACE
-D:\tehnikum\c#\InvestingIS\InvestingIS\App.xaml
+D:\tehnikum\c#\InvestingIS_GIT\InvestingIS\InvestingIS\App.xaml
 72010083031
 
 151605377711
-17-599266216
+17-1802154604
 AddBagWindow.xaml;AddCompanyWindow.xaml;LoginWindow.xaml;MainISWindow.xaml;RegistrationWindow.xaml;SecurityPaperCreateWindow.xaml;TransactionViewWindow.xaml;
 
 False

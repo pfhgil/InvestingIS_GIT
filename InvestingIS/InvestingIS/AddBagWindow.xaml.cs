@@ -34,7 +34,7 @@ namespace InvestingIS
         private void AddBagButton_Click(object sender, RoutedEventArgs e)
         {
             if (BagNameTextBox.Text.Length < 3 || BagNameTextBox.Text.Length > 24 ||
-                !Utils.CyrillicRegex.IsMatch(BagNameTextBox.Text) || !Utils.EnglishRegex.IsMatch(BagNameTextBox.Text)) return;
+                (!Utils.CyrillicRegex.IsMatch(BagNameTextBox.Text) && !Utils.EnglishRegex.IsMatch(BagNameTextBox.Text))) return;
 
             MainISWindow.BagsTableAdapter.InsertBag(BagNameTextBox.Text, CurrentUser.ID);
 

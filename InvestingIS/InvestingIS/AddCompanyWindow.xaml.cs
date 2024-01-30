@@ -28,7 +28,7 @@ namespace InvestingIS
         private void AddCompanyButton_Click(object sender, RoutedEventArgs e)
         {
             if (CompanyNameTextBox.Text.Length < 3 || CompanyNameTextBox.Text.Length > 48 ||
-                !Utils.CyrillicRegex.IsMatch(CompanyNameTextBox.Text) || !Utils.EnglishRegex.IsMatch(CompanyNameTextBox.Text)) return;
+                (!Utils.CyrillicRegex.IsMatch(CompanyNameTextBox.Text) && !Utils.EnglishRegex.IsMatch(CompanyNameTextBox.Text))) return;
 
             MainISWindow.CompaniesTableAdapter.InsertCompany(CompanyNameTextBox.Text);
 
